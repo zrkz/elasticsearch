@@ -14,4 +14,4 @@ services:
   - key: discovery.type
     value: single-node
   - key: cluster.name
-    value: elasticsearch
+    value: elastic
