@@ -8,4 +8,7 @@ COPY --chown=1000:0 config/elasticsearch.yml /usr/share/elasticsearch/config/ela
 # to circumvent https://github.com/elastic/ansible-elasticsearch/issues/430
 RUN chmod g+ws /usr/share/elasticsearch/config
 
+# Expose the port
+EXPOSE 9200
+
 USER 1000:0
